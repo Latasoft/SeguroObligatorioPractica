@@ -21,7 +21,7 @@ const Preciotablasgenerador = ({ precioTablas }) => {
                     </React.Fragment>
                   ))}
                 </dl>
-                <p className="flex flex-grow w-full items-end justify-center"><Link className=" inline-block px-4 py-2 bg-transparent hover:bg-sky-600 font-bold uppercase border-2 border-solid text-sky-600 hover:text-white border-sky-600 transition-all ease-linear duration-200" href={seguro.compra} alt="">Comprar</Link></p>
+                <p className="flex flex-grow w-full items-end justify-center"><Link className=" inline-block px-4 py-2 bg-transparent hover:bg-sky-600 font-bold uppercase border-2 border-solid text-sky-600 rounded-lg hover:text-white border-sky-600 transition-all ease-linear duration-200" href={seguro.compra} alt="">Comprar</Link></p>
               </div>
             ))}
           </div>
