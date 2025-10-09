@@ -3,17 +3,6 @@
         "mes": "marzo",
         "seguros": [
             {
-                "nombre": "images/preciosBCISeguros.jpg",
-                "compra": "https://soapweb.bciseguros.cl/web/DatosVehiculo?Convenios=278884001FEA1CB684EE30C09C81B974",
-                "precios": [
-                    { "vehiculoTipo": "Automóvil, Jeep y St Wagon" , "precio": 7300 },
-                    { "vehiculoTipo": "Camioneta y Furgón" , "precio": 9800 },
-                    { "vehiculoTipo": "Carro Arrastre y Casa Rodante" , "precio": 5500 },
-                    { "vehiculoTipo": "Moto y Cuatrimoto" , "precio": 46000 },
-                    { "vehiculoTipo": "Mini Bus Particular" , "precio": 23000 }
-                ]
-            },
-            {
                 "nombre": "images/preciosMutualDeSegurosDeChile.png",
                 "compra": "https://core.mutualdeseguros.cl/soap_ms/pago.php?tipodeventa=10",
                 "precios": [
@@ -22,42 +11,6 @@
                     { "vehiculoTipo": "Carro Arrastre" , "precio": 5500 },
                     { "vehiculoTipo": "Moto y Cuatrimoto" , "precio": 46000 },
                     { "vehiculoTipo": "Mini Bus" , "precio": 25000 }
-                ]
-            }
-        ]
-    },
-    {
-        "mes": "mayo",
-        "seguros": [
-            {
-                "nombre": "images/preciosBCISeguros.jpg",
-                "compra": "https://soapweb.bciseguros.cl/web/DatosVehiculo?Convenios=278884001FEA1CB684EE30C09C81B974",
-                "precios": [
-                    { "vehiculoTipo": "Taxi Básico" , "precio": 20000 },
-                    { "vehiculoTipo": "Taxi Ejecutivo" , "precio": 21000 },
-                    { "vehiculoTipo": "Taxi Turismo" , "precio": 21000 },
-                    { "vehiculoTipo": "Taxi Colectivo" , "precio": 24000 },
-                    { "vehiculoTipo": "Mini Escolar" , "precio": 22000 },
-                    { "vehiculoTipo": "Mini Turismo" , "precio": 23000 },
-                    { "vehiculoTipo": "Bus Escolar" , "precio": 65000 },
-                    { "vehiculoTipo": "Bus Rural" , "precio": 109000 },
-                    { "vehiculoTipo": "Bus Urbano" , "precio": 109000 },
-                    { "vehiculoTipo": "Bus Interurbano" , "precio": 235000 }
-                ]
-            }
-        ]
-    },
-    {
-        "mes": "septiembre",
-        "seguros": [
-            {
-                "nombre": "images/preciosBCISeguros.jpg",
-                "compra": "https://soapweb.bciseguros.cl/web/DatosVehiculo?Convenios=278884001FEA1CB684EE30C09C81B974",
-                "precios": [
-                    { "vehiculoTipo": "Camión y Tracto" , "precio": 25000 },
-                    { "vehiculoTipo": "Remolque y Semi-Remolque y Rampla" , "precio": 8500 },
-                    { "vehiculoTipo": "Maquinaria Industrial" , "precio": 11000 },
-                    { "vehiculoTipo": "Maquinaria Agrícola" , "precio": 11000 }
                 ]
             }
         ]

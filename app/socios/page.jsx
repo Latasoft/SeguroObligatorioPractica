@@ -39,19 +39,6 @@ export default function quienessomos() {
                             </p>
                         </div>
                     </div>
-
-                    <div className="  mt-32 flex justify-center sm:justify-center md:justify-start lg:justify-start">
-                        <div data-aos-once="true" data-aos="fade-down" className=" h-full text-center border-solid border-2 border-neutral-100 rounded-lg max-w-96 py-8 shadow-lg shadow-neutral-500">
-                            <p data-aos-once="true" data-aos="flip-right" className="-mt-32"><img className="mx-auto" src={aliansabciseguros.src} alt=""/></p>
-                            <h3 className=" font-bold text-lg sm:text-lg md:text-xl lg:text-xl px-6 uppercase font-Poppins m-3 sm:m-3 md:m-6 lg:m-6">BCI Seguros</h3>
-                            <p className="text-justify indent-5 hyphens-auto  font-normal text-sm sm:text-md md:text-lg lg:text-lg px-4 sm:px-4 md:px-6 lg:px-8">
-                                BCI Seguros, es una empresa para servir a personas y PYMES, basada en la innovación, calidad, excelencia, comprometidos y eficientes de Chile.</p>
-                            <p className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-1/2">
-                                <Link className="shadow-md shadow-neutral-500 text-sm font-semibold inline-block mx-auto uppercase text-white bg-sky-700 hover:bg-sky-600 px-6 py-3 rounded-md transition-all ease-in-out duration-700" href="https://soapweb.bciseguros.cl/web/DatosVehiculo.aspx?Convenios=278884001FEA1CB684EE30C09C81B974" >Compra aquí</Link>
-                            </p>
-                        </div>
-                    </div>
-
                 </div>
 
             </section>

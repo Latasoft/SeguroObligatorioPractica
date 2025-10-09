@@ -54,33 +54,19 @@ export default function Page() {
                 <p data-aos-once="true" data-aos="fade-up" className=" text-gray-600 text-justify indent-5 hyphens-auto text-lg sm:text-lg md:text-xl lg:text-2xl px-6 leading-normal sm:leading-normal md:leading-relaxed lg:leading-relaxed ">
                     Con el fin de ofrecerles a nuestros clientes seguridad y confianza, ofrecemos diversas alternativas de aseguradoras reconocidas en el mercado, para que nuestros clientes tengan acceso a variedad de precios y servicios.</p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-4 md:gap-6 lg:gap-8 my-12">
-
-                    <div className="  mt-32 flex justify-center sm:justify-center md:justify-end lg:justify-end">
-                        <div data-aos-once="true" data-aos="fade-down" className=" h-full text-center border-solid border-2 border-neutral-100 rounded-lg max-w-96 py-8 shadow-lg shadow-neutral-500">
-                            <p data-aos-once="true" data-aos="flip-right" className="-mt-32"><img className="mx-auto" src={aliansamutualdesegurosdechile.src} alt="" /></p>
-                            <h3 className=" font-bold text-lg sm:text-lg md:text-xl lg:text-xl px-6 uppercase font-Poppins  m-3 sm:m-3 md:m-6 lg:m-6">Mutual de Seguros</h3>
-                            <p className="text-justify indent-5 hyphens-auto  font-normal text-sm sm:text-md md:text-lg lg:text-lg px-4 sm:px-4 md:px-6 lg:px-8">
-                                Somos una Corporación de derecho privado, sin fines de lucro, que desde 1919 mantiene un lugar destacado en la industria aseguradora de vida en el país.</p>
-                            <p className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-1/2">
-                                <Link className="shadow-md shadow-neutral-500 text-sm font-semibold inline-block mx-auto uppercase text-white bg-sky-700 hover:bg-sky-600 px-6 py-3 rounded-md transition-all ease-in-out duration-700" href="./precios" >Precios</Link>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="  mt-32 flex justify-center sm:justify-center md:justify-start lg:justify-start">
-                        <div data-aos-once="true" data-aos="fade-down" className=" h-full text-center border-solid border-2 border-neutral-100 rounded-lg max-w-96 py-8 shadow-lg shadow-neutral-500">
-                            <p data-aos-once="true" data-aos="flip-right" className="-mt-32"><img className="mx-auto" src={aliansabciseguros.src} alt="" /></p>
-                            <h3 className=" font-bold text-lg sm:text-lg md:text-xl lg:text-xl px-6 uppercase font-Poppins m-3 sm:m-3 md:m-6 lg:m-6">BCI Seguros</h3>
-                            <p className="text-justify indent-5 hyphens-auto  font-normal text-sm sm:text-md md:text-lg lg:text-lg px-4 sm:px-4 md:px-6 lg:px-8">
-                                BCI Seguros, es una empresa para servir a personas y PYMES, basada en la innovación, calidad, excelencia, comprometidos y eficientes de Chile.</p>
-                            <p className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-1/2">
-                                <Link className="shadow-md shadow-neutral-500 text-sm font-semibold inline-block mx-auto uppercase text-white bg-sky-700 hover:bg-sky-600 px-6 py-3 rounded-md transition-all ease-in-out duration-700" href="./precios" >Precios</Link>
-                            </p>
-                        </div>
-                    </div>
-
+        <div className="flex justify-center my-12">
+            <div className="mt-32">
+                <div data-aos-once="true" data-aos="fade-down" className=" h-full text-center border-solid border-2 border-neutral-100 rounded-lg max-w-96 py-8 shadow-lg shadow-neutral-500">
+                    <p data-aos-once="true" data-aos="flip-right" className="-mt-32"><img className="mx-auto" src={aliansamutualdesegurosdechile.src} alt="" /></p>
+                    <h3 className=" font-bold text-lg sm:text-lg md:text-xl lg:text-xl px-6 uppercase font-Poppins  m-3 sm:m-3 md:m-6 lg:m-6">Mutual de Seguros</h3>
+                    <p className="text-justify indent-5 hyphens-auto  font-normal text-sm sm:text-md md:text-lg lg:text-lg px-4 sm:px-4 md:px-6 lg:px-8">
+                        Somos una Corporación de derecho privado, sin fines de lucro, que desde 1919 mantiene un lugar destacado en la industria aseguradora de vida en el país.</p>
+                    <p className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-1/2">
+                        <Link className="shadow-md shadow-neutral-500 text-sm font-semibold inline-block mx-auto uppercase text-white bg-sky-700 hover:bg-sky-600 px-6 py-3 rounded-md transition-all ease-in-out duration-700" href="./precios" >Precios</Link>
+                    </p>
                 </div>
+            </div>
+        </div>
 
             </section>
             <section className=" max-w-screen-lg mx-auto w-full my-24 sm:my-24 md:my-24 lg:my-28 ">
