@@ -6,7 +6,6 @@ import Link from 'next/link';
 import Fadingbackground from '@/components/Fadingbackground';
 
 
-import aliansabciseguros from '/public/images/aliansabciseguros.jpg';
 import aliansamutualdesegurosdechile from '/public/images/aliansamutualdesegurosdechile.png';
 import bannerexperiencia from '/public/images/bannerexperiencia.jpg';
 import bannerseguridad from '/public/images/bannerseguridad.jpg';

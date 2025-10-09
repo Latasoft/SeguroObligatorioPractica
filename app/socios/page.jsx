@@ -2,8 +2,6 @@
 import Link from 'next/link';
 
 import socios from '/public/images/socios.jpg';
-import aliansabciseguros from '/public/images/aliansabciseguros.jpg';
-import aliansahdiseguros from '/public/images/aliansahdiseguros.png';
 import aliansamutualdesegurosdechile from '/public/images/aliansamutualdesegurosdechile.png';
 
 import NuevoImagenesDeslizador from './NuevoImagenesDeslizador';
