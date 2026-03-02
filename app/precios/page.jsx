@@ -1,10 +1,8 @@
 
-import Preciotablasgenerador from './preciotablasgenerador';
+import PreciosClientFetcher from './PreciosClientFetcher';
 import ImageScroll from './imagescroll';
 import preciosCover from '/public/images/preciosCover.jpg';
 import preciosIcon from '/public/images/preciosIcon.svg';
-
-import precioTablas from '../../data/precioTablas.json';
 
 export const metadata = {
     title: 'Precios'
@@ -24,7 +22,7 @@ export default function quienessomos() {
             </section>
 
             <section id="targetSection" className="max-w-screen-lg mx-auto text-center ">
-                <Preciotablasgenerador precioTablas={precioTablas} />
+                <PreciosClientFetcher />
             </section>
 
         </main>
