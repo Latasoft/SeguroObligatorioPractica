@@ -32,9 +32,13 @@ export default function PreciosClientFetcher() {
   }
 
   return (
-    <>
-      <Preciotablasgenerador precioTablas={precioTablas} />
-      <PreciotablasgeneradorBci precioTablasBci={precioTablasBci} />
-    </>
+        <div className="flex flex-col md:flex-row justify-center items-start gap-6">
+      <div className="w-full md:w-1/2">
+        <Preciotablasgenerador precioTablas={precioTablas} />
+      </div>
+      <div className="w-full md:w-1/2">
+        <PreciotablasgeneradorBci precioTablasBci={precioTablasBci} />
+      </div>
+    </div>
   );
 }
