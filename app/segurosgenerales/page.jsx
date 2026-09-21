@@ -41,8 +41,11 @@ export default function Segurosgenerales() {
             */}
             <section className=" pb-0 sm:pb-0 md:pb-28 lg:pb-32 w-full bg-white">
                 <form data-aos="fade-up" data-aos-once="true" className={` py-8 mx-auto w-full max-w-3xl p-4 bg-slate-300 bg-opacity-70 md:rounded-xl md:shadow-lg md:shadow-gray-700 lg:rounded-xl lg:shadow-lg lg:shadow-gray-700 `}
-                    acceptCharset="utf-8" action="https://formspree.io/f/mldrnqzn" method="post"
-                    > {/* onSubmit={handleSubmit} */}
+    acceptCharset="utf-8" action="https://api.web3forms.com/submit" method="post"
+    > {/* onSubmit={handleSubmit} */}
+    <input type="hidden" name="access_key" value="2fa94fbc-a421-4b38-8b72-1d16f6e2554c" />
+<input type="hidden" name="subject" value="Nueva solicitud - Seguros Generales" />
+<input type="hidden" name="redirect" value="https://seguroobligatorio.cl/segurosgenerales" />
                     <p className="mt-8">
                         <label className=" block text-base font-bold" htmlFor="consultaTipo">Tipo de seguro:</label>
                         <select className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70 appearance-none bg-[url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiNiYmIiPjxwYXRoIGQ9Ik02IDlsNiA2IDYtNiIvPjwvc3ZnPg==)] bg-no-repeat bg-right " id="consultaTipo" name="consultaTipo" >
