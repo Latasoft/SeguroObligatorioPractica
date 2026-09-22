@@ -1,10 +1,31 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 // import { useForm, ValidationError } from '@formspree/react';
 
 
 
 export default function Segurosgenerales() {
+    const [formData, setFormData] = useState({
+        consultaTipo: '',
+        rut: '',
+        nombre: '',
+        patapellido: '',
+        matapellido: '',
+        correo: '',
+        vehiculotipo: '',
+        vehiculopatente: '',
+        vehiculomarca: '',
+        vehiculomodelo: '',
+        vehiculoagno: '',
+    });
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const formCompleto = Object.values(formData).every(
+        (valor) => valor !== '' && valor !== 'Seleccione...'
+    );
     /*
     const [state, handleSubmit] = useForm("mldrnqzn");
     if (state.succeeded) {
@@ -48,7 +69,7 @@ export default function Segurosgenerales() {
 <input type="hidden" name="redirect" value="https://seguroobligatorio.cl/segurosgenerales" />
                     <p className="mt-8">
                         <label className=" block text-base font-bold" htmlFor="consultaTipo">Tipo de seguro:</label>
-                        <select className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70 appearance-none bg-[url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiNiYmIiPjxwYXRoIGQ9Ik02IDlsNiA2IDYtNiIvPjwvc3ZnPg==)] bg-no-repeat bg-right " id="consultaTipo" name="consultaTipo" >
+                        <select className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70 appearance-none bg-[url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiNiYmIiPjxwYXRoIGQ9Ik02IDlsNiA2IDYtNiIvPjwvc3ZnPg==)] bg-no-repeat bg-right " id="consultaTipo" name="consultaTipo" value={formData.consultaTipo} onChange={handleChange} >
                             <option className="uppercase" value="Seleccione...">Seleccione...</option>
                             <option className="uppercase" value="Vehículos">Vehículos</option>
                             <option className="uppercase" value="Vida">Vida</option>
@@ -60,56 +81,55 @@ export default function Segurosgenerales() {
                         <span className=" text-lg font-normal ">(Debe corresponder al dueño del vehículo)</span></h4>
                     <p className="mt-8">
                         <label className=" block text-base font-bold" htmlFor="rut">RUT</label>
-                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="rut" name="rut" />
+                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="rut" name="rut" value={formData.rut} onChange={handleChange} />
                     </p>
                     <p className="mt-8">
                         <label className=" block text-base font-bold" htmlFor="nombre">Nombre</label>
-                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="nombre" name="nombre" />
+                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="nombre" name="nombre" value={formData.nombre} onChange={handleChange} />
                     </p>
                     <p className="mt-8">
                         <label className=" block text-base font-bold" htmlFor="patapellido">Apellido patero</label>
-                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="patapellido" name="patapellido" />
+                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="patapellido" name="patapellido" value={formData.patapellido} onChange={handleChange} />
                     </p>
                     <p className="mt-8">
                         <label className=" block text-base font-bold" htmlFor="matapellido">Apellido materno</label>
-                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="matapellido" name="matapellido" />
+                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="matapellido" name="matapellido" value={formData.matapellido} onChange={handleChange} />
                     </p>
                     <p className="mt-8">
                         <label className=" block text-base font-bold" htmlFor="correo">Correo electrónico</label>
-                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="email" id="correo" name="correo" />
+                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="email" id="correo" name="correo" value={formData.correo} onChange={handleChange} />
                     </p>
                     <h4 className="mt-16 bloc font-bold text-center">
                         <span className=" text-2xl font-bold ">Datos del vehículo</span></h4>
 
                     <p className="mt-8">
                         <label className=" block text-base font-bold" htmlFor="vehiculotipo">Tipo de vehículo</label>
-                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="vehiculotipo" name="vehiculotipo" />
+                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="vehiculotipo" name="vehiculotipo" value={formData.vehiculotipo} onChange={handleChange} />
                     </p>
                     <p className="mt-8">
                         <label className=" block text-base font-bold" htmlFor="vehiculopatente">Patente</label>
-                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="vehiculopatente" name="vehiculopatente" />
+                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="vehiculopatente" name="vehiculopatente" value={formData.vehiculopatente} onChange={handleChange} />
                     </p>
                     <p className="mt-8">
                         <label className=" block text-base font-bold" htmlFor="vehiculomarca">Marca</label>
-                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="vehiculomarca" name="vehiculomarca" />
+                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="vehiculomarca" name="vehiculomarca" value={formData.vehiculomarca} onChange={handleChange} />
                     </p>
                     <p className="mt-8">
                         <label className=" block text-base font-bold" htmlFor="vehiculomodelo">Modelo</label>
-                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="vehiculomodelo" name="vehiculomodelo" />
+                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="vehiculomodelo" name="vehiculomodelo" value={formData.vehiculomodelo} onChange={handleChange} />
                     </p>
                     <p className="mt-8">
                         <label className=" block text-base font-bold" htmlFor="vehiculoagno">Año</label>
-                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="number" id="vehiculoagno" name="vehiculoagno" />
+                        <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="number" id="vehiculoagno" name="vehiculoagno" value={formData.vehiculoagno} onChange={handleChange} />
                     </p>
                     <p className="mt-8">
-                        <input className=" cursor-pointer px-6 py-2 font-bold text-white text-opacity-40 hover:text-opacity-100 uppercase text-center inline-block bg-gray-500 hover:bg-gray-800 transition-all ease duration-300" type="submit" id="enviar" name="enviar" value="Enviar"
-                        /> {/* disabled={state.submitting} */}
-                    </p>
+    <input className={`cursor-pointer px-6 py-2 font-bold text-white text-opacity-40 hover:text-opacity-100 uppercase text-center inline-block transition-all ease duration-300 ${formCompleto ? 'bg-green-600 hover:bg-green-700' : 'bg-gray-500 hover:bg-gray-800'}`}
+        type="submit" id="enviar" name="enviar" value="Enviar"
+    /> {/* disabled={state.submitting} */}
+</p>
                 </form>
             </section>
 
         </main>
     );
 }
-
-
