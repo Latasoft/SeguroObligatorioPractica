@@ -88,7 +88,7 @@ export default function Segurosgenerales() {
                         <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="nombre" name="nombre" value={formData.nombre} onChange={handleChange} />
                     </p>
                     <p className="mt-8">
-                        <label className=" block text-base font-bold" htmlFor="patapellido">Apellido patero</label>
+                        <label className=" block text-base font-bold" htmlFor="patapellido">Apellido paterno</label>
                         <input className=" block w-full border-2 border-solid border-gray-300 p-2 bg-white bg-opacity-70" type="text" id="patapellido" name="patapellido" value={formData.patapellido} onChange={handleChange} />
                     </p>
                     <p className="mt-8">
