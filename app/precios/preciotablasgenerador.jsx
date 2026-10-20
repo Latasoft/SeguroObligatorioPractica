@@ -6,7 +6,9 @@ const Preciotablasgenerador = ({ precioTablas }) => {
     <>
       {precioTablas.map((tabla, index) => (
         <div key={index} className=" my-20 mx-6">
-          <h3 data-aos-once="true" data-aos="flip-down" className="bg-sky-600 text-white text-center text-xl sm:text-xl md:text-2xl lg:text-2xl py-3 sm:py-3 md:py-4 lg:py-6 mb-6 font-bold uppercase rounded-se-full rounded-es-full ">{tabla.mes}</h3>
+          <h3 data-aos-once="true" data-aos="flip-down" className="bg-sky-600 text-white text-center text-xl sm:text-xl md:text-2xl lg:text-2xl py-3 sm:py-3 md:py-4 lg:py-6 mb-4 font-bold uppercase rounded-se-full rounded-es-full ">{tabla.titulo}</h3>
+          <p className="text-center text-gray-700 font-semibold">{tabla.mes}</p>
+          <p className="text-center text-sky-600 font-bold mb-6">{tabla.tipoVehiculos}</p>
           <div className={` mx-auto  ${(tabla.seguros.length > 1) ? ' flex flex-col md:flex-row ': 'flex flex-col' } gap-10 justify-center items-center `}>
             {tabla.seguros.map((seguro, seguroIndex) => (
               <div data-aos-once="true" data-aos="fade-up" key={seguroIndex} className={` flex flex-col h-full w-full max-w-96 mx-0 border-solid border-2 border-neutral-100 rounded-md py-6 shadow-lg shadow-neutral-500 `}>
