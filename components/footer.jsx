@@ -25,8 +25,7 @@ export function Footer() {
                     <h3 className="my-3 uppercase text-lg font-bold">Atención público</h3>
                     <p className="my-3">
                         Lunes a Viernes<br/>
-                        8:30 hrs. a 14:00 hrs.<br/>
-                        15:00 hrs. a 18:00 hrs.
+                        8:30 hrs. a 14:00 hrs.   
                     </p>
                 </div>{/*
                 <div className="w-full sm:w-full md:w-1/3 lg:w-1/3 my-6 text-center inline-block align-top">

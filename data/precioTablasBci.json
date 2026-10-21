@@ -1,6 +1,8 @@
 [
     {
-        "mes": "Desde 01/09/2026",
+        "titulo": "Septiembre",
+        "mes": "Vigencia desde 01/09/2026",
+        "tipoVehiculos": "Vehículos transporte de carga",
         "seguros": [
             {
                 "nombre": "images/logoBci.png",

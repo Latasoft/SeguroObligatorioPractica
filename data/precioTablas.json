@@ -1,6 +1,8 @@
 [
     {
-        "mes": "Desde 01/04/2026",
+        "titulo": "Marzo",
+        "mes": "Vigencia desde 01/04/2026",
+        "tipoVehiculos": "Vehículos particulares",
         "seguros": [
             {
                 "nombre": "images/preciosMutualDeSegurosDeChile.png",
