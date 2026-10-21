@@ -6,6 +6,7 @@ import PreciotablasgeneradorBci from './preciotablasgeneradorBci';
 
 import precioTablasData from '../../data/precioTablas.json';
 import precioTablasBciData from '../../data/precioTablasBci.json';
+import precioTablasBciMayoData from '../../data/precioTablasBciMayo.json';
 
 export default function PreciosClientFetcher() {
   const [precioTablas, setPrecioTablas] = useState(null);
@@ -32,11 +33,14 @@ export default function PreciosClientFetcher() {
   }
 
   return (
-        <div className="flex flex-col md:flex-row justify-center items-start gap-6">
-      <div className="w-full md:w-1/2">
+    <div className="flex flex-col lg:flex-row justify-center items-start gap-6">
+      <div className="w-full lg:w-1/3">
         <Preciotablasgenerador precioTablas={precioTablas} />
       </div>
-      <div className="w-full md:w-1/2">
+      <div className="w-full lg:w-1/3">
+        <PreciotablasgeneradorBci precioTablasBci={precioTablasBciMayoData} />
+      </div>
+      <div className="w-full lg:w-1/3">
         <PreciotablasgeneradorBci precioTablasBci={precioTablasBci} />
       </div>
     </div>

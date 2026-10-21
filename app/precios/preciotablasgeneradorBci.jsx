@@ -19,7 +19,7 @@ const PreciotablasgeneradorBci = ({ precioTablasBci }) => {
                   {seguro.precios.map((precio, precioIndex) => (
                     <React.Fragment key={precioIndex}>
                       <dt className="inline-block col-span-3 py-2 pr-2 text-gray-600 text-left text-base tracking-tight border-t-2 border-dotted border-black border-opacity-10">{precio.vehiculoTipo}</dt>
-                      <dd className="inline-block col-span-1 py-2      text-gray-600 text-left text-base tracking-tight border-t-2 border-dotted border-black border-opacity-10">$ {precio.precio}</dd>
+                        <dd className="whitespace-nowrap inline-block col-span-1 py-2      text-gray-600 text-left text-base tracking-tight border-t-2 border-dotted border-black border-opacity-10">$ {precio.precio}</dd>
                     </React.Fragment>
                   ))}
                 </dl>

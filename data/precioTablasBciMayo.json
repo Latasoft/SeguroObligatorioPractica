@@ -1,0 +1,28 @@
+[
+    {
+        "titulo": "Mayo",
+        "mes": "Vigencia desde POR CONFIRMAR",
+        "tipoVehiculos": "Vehículos transporte público",
+        "seguros": [
+            {
+                "nombre": "images/logoBci.png",
+                "compra": "https://soapweb.bciseguros.cl/web/DatosVehiculo.aspx?Convenios=990B2B3D638230F4EF7B7CD6304F9FEC",
+                "precios": [
+                    { "vehiculoTipo": "Minibús escolar" , "precio": 26000 },
+                    { "vehiculoTipo": "Minibús mayo" , "precio": 28000 },
+                    { "vehiculoTipo": "Minibús turismo" , "precio": 28000 },
+                    { "vehiculoTipo": "Taxi básico" , "precio": 26000 },
+                    { "vehiculoTipo": "Taxi ejecutivo" , "precio": 26000 },
+                    { "vehiculoTipo": "Taxi turismo" , "precio": 26000 },
+                    { "vehiculoTipo": "Taxi colectivo" , "precio": 29000 },
+                    { "vehiculoTipo": "Bus escolar" , "precio": 85000 },
+                    { "vehiculoTipo": "Bus turismo" , "precio": 85000 },
+                    { "vehiculoTipo": "Bus particular" , "precio": 85000 },
+                    { "vehiculoTipo": "Bus rural" , "precio": 98000 },
+                    { "vehiculoTipo": "Bus urbano" , "precio": 98000 },
+                    { "vehiculoTipo": "Bus interprovincial" , "precio": 320000 }
+                ]
+            }
+        ]
+    }
+]
